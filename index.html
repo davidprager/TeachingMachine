@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple JavaScript</title>
+    <script src="JSConsole.js"></script>
+    <script src="TeachingMachine.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body onload="TeachingMachine()">
+    <div id ="questions">
+      <question id="Numbers1">
+        True or false: Numbers in JavaScript may contain a decimal point.
+        <answer response="true" nextQuestion="Remainders1" />
+        <answer response="false" nextQuestion="Numbers2" />
+      </question>
+
+      <question id="Numbers2">
+        True or false: Numbers can be negative.
+        <answer response="true" nextQuestion="Remainders1" />
+        <answer response="false" nextQuestion="Numbers1" />
+      </question>
+
+      <question id="Remainders1">
+        What is the value of 7 % 4?
+        <answer response="3" nextQuestion="Boolean1" />
+        <answer response="*" nextQuestion="Remainders2" />
+      </question>
+
+      <question id="Remainders2">
+        What is the value of 4 % 7?
+        <answer response="4" nextQuestion="Boolean1" />
+        <answer response="*" nextQuestion="Remainders1" />
+      </question>
+
+      <question id="Boolean1">
+        How many values are there of Boolean type?
+        <answer response="2" nextQuestion="Finish" />
+        <answer response="two" nextQuestion="Finish" />
+        <answer response="*" nextQuestion="Boolean2" />
+      </question>
+
+      <question id="Boolean2">
+        What JavaScript operator best represents the English word "and"?
+        <answer response="&&" nextQuestion="Finish" />
+        <answer response="*" nextQuestion="Boolean1" />
+      </question>
+
+      <question id="Finish">
+        You seem to have mastered JavaScript. Start over?
+        <answer response="yes" nextQuestion="Numbers1" />
+        <answer response="no" nextQuestion="EXIT" />
+      </question>
+
+    </div>
+  </body>
+</html>

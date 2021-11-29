@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScriptExpressions</title>
+    <script src="JSConsole.js"></script>
+    <script src="TeachingMachine.js"></script>
+      <script src="TeachingMachine.js"></script>
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body onload="TeachingMachine()">
+      <div id ="questions">
+        <question id="Q1">
+          True or false: Numbers can have fractional parts.
+          <answer response="true" nextQuestion="Q4" />
+          <answer response="false" nextQuestion="Q2" />
+        </question>
+        <question id="Q2">
+          That's incorrect.  Numbers can have fractional parts.
+          True or false: Numbers can be negative.
+          <answer response="true" nextQuestion="Q4" />
+          <answer response="false" nextQuestion="Q3" />
+        </question>
+        <question id="Q3">
+          No.  You should go back and review the text.
+          Would you like to quit?
+          <answer response="yes" nextQuestion="EXIT" />
+          <answer response="y" nextQuestion="EXIT" />
+          <answer response="no" nextQuestion="Q1" />
+          <answer response="n" nextQuestion="Q1" />
+        </question>
+        <question id="Q4">
+          What is the value of 17 % 4?
+             a.  0
+             b.  1
+             c.  3
+             d.  4
+          <answer response="a" nextQuestion="Q5" />
+          <answer response="0" nextQuestion="Q5" />
+          <answer response="b" nextQuestion="Q6" />
+          <answer response="1" nextQuestion="Q6" />
+          <answer response="c" nextQuestion="Q5" />
+          <answer response="3" nextQuestion="Q5" />
+          <answer response="d" nextQuestion="Q5" />
+          <answer response="4" nextQuestion="Q5" />
+        </question>
+        <question id="Q5">
+          No.  Try again.
+          What is the value of 23 % 7?
+             a.  2
+             b.  3
+             c.  6
+             d.  7
+          <answer response="a" nextQuestion="Q6" />
+          <answer response="2" nextQuestion="Q6" />
+          <answer response="b" nextQuestion="Q5" />
+          <answer response="3" nextQuestion="Q5" />
+          <answer response="c" nextQuestion="Q5" />
+          <answer response="6" nextQuestion="Q5" />
+          <answer response="d" nextQuestion="Q5" />
+          <answer response="7" nextQuestion="Q5" />
+        </question>
+        <question id="Q6">
+          Yes.  That is correct.
+          How many values are there of type boolean?
+          <answer response="1" nextQuestion="Q7" />
+          <answer response="one" nextQuestion="Q7" />
+          <answer response="2" nextQuestion="Q8" />
+          <answer response="two" nextQuestion="Q8" />
+          <answer response="3" nextQuestion="Q7" />
+          <answer response="three" nextQuestion="Q7" />
+          <answer response="many" nextQuestion="Q7" />
+        </question>
+        <question id="Q7">
+          No, there are only two booleans:  true and false.
+
+          The JavaScript operator used to indicate the English
+          idea of "or" in a Boolean expression is: 
+             a.  |
+             b.  ||
+             c.  OR
+             d.  none of the above
+          <answer response="a" nextQuestion="Q8" />
+          <answer response="b" nextQuestion="Q9" />
+          <answer response="c" nextQuestion="Q8" />
+          <answer response="d" nextQuestion="Q8" />
+        </question>
+        <question id="Q8">
+          The JavaScript operator used to indicate the English
+          idea of "or" in a Boolean expression is: 
+             a.  |
+             b.  ||
+             c.  OR
+             d.  none of the above
+          <answer response="a" nextQuestion="Q3" />
+          <answer response="b" nextQuestion="Q9" />
+          <answer response="c" nextQuestion="Q3" />
+          <answer response="d" nextQuestion="Q3" />
+        </question>
+        <question id="Q9">
+          You seem to have mastered JavaScript.
+          Would you like to try again?
+          <answer response="yes" nextQuestion="Q1" />
+          <answer response="no" nextQuestion="EXIT" />
+        </question>
+    </div>
+  </body>
+</html>
